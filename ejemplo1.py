@@ -8,5 +8,7 @@ print(imagen[0][0])
 imagen = cv2.resize(imagen,(256,256))
 
 cv2.imwrite('resizeimagen.jpg',imagen)
+imagen = cv2.cvtColor(imagen,cv2.COLOR_BGR2GRAY)
+cv2.imwrite("grayimagen.jpg",imagen)
 
 
